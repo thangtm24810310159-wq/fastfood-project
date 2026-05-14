@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng Ký - FastFood</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+   <header>
+        <div class="logo">🍔 FastFood</div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="menu.html">Thực đơn</a></li>
+                <li><a href="combo.html">Combo</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+           <div class="cart-menu">
+            <a href="giohang.html" class="cart-icon">
+                🛒 Giỏ hàng <span id="cart-count">0</span>
+            </a>
+        </div>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn-login">Đăng nhập</a>
+                <a href="register.html" class="btn-register">Đăng ký</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="auth-container">
+            <h2>Tạo Tài Khoản</h2>
+            <form action="login.html"> <div class="form-group">
+                    <label for="fullname">Họ và tên:</label>
+                    <input type="text" id="fullname" placeholder="Nhập họ tên của bạn" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Nhập email của bạn" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Mật khẩu:</label>
+                    <input type="password" id="password" placeholder="Tạo mật khẩu" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm-password">Xác nhận mật khẩu:</label>
+                    <input type="password" id="confirm-password" placeholder="Nhập lại mật khẩu" required>
+                </div>
+                
+                <button type="submit" class="btn-add">Đăng Ký</button>
+            </form>
+            
+            <p class="auth-link">Đã có tài khoản? <a href="login.html">Đăng nhập ngay</a></p>
+        </div>
+    </main>
+
+     <footer>
+        <p>Liên hệ: 1900 1234 | Email: yummy@fastfood.vn</p>
+        <p>Địa chỉ: Số 1 Hoàng Quốc Việt, Bắc Từ Liêm, Hà Nội.</p>
+        <p>&copy; Công ty TNHH FASTFOOD</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

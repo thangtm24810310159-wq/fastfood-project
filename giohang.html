@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giỏ Hàng - FastFood</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🍔 FastFood</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="menu.html">Thực đơn</a></li>
+                <li><a href="combo.html">Combo</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <div class="cart-menu">
+                <a href="giohang.html" class="cart-icon" style="color: #ffca28;">
+                    🛒 Giỏ hàng <span id="cart-count">0</span>
+                </a>
+                <button id="btn-clear-cart" class="btn-clear">🗑️ Xóa nhanh</button>
+            </div>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn-login">Đăng nhập</a>
+                <a href="register.html" class="btn-register">Đăng ký</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="section-title">Giỏ Hàng Của Bạn</h2>
+        
+        <div class="contact-container">
+            <div class="contact-info" style="text-align: center;">
+                <h3>Danh Sách Đã Chọn</h3>
+                
+                <div id="cart-items-container" style="max-height: 350px; overflow-y: auto; margin-top: 20px; border-top: 2px solid #333;">
+                    </div>
+
+                <div style="margin-top: 20px; border-top: 2px solid #333; padding-top: 15px; text-align: right;">
+                    <h3 style="color: #333;">Tổng thanh toán: <span id="cart-total-price" style="color: #d32f2f; font-size: 26px;">0đ</span></h3>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>Nhập Thông Tin Nhận Hàng</h3>
+                <form action="index.html">
+                    <input type="text" placeholder="Họ và tên người nhận" required>
+                    <input type="tel" placeholder="Số điện thoại liên hệ" required>
+                    <textarea rows="4" placeholder="Địa chỉ giao hàng cụ thể (Số nhà, đường...)" required></textarea>
+                    <button type="submit" class="btn-add" id="btn-checkout" style="background-color: #4CAF50; font-size: 18px; padding: 12px 0;">Xác Nhận Đặt Hàng</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Liên hệ: 1900 1234 | Email: yummy@fastfood.vn</p>
+        <p>Địa chỉ: Số 1 Hoàng Quốc Việt, Bắc Từ Liêm, Hà Nội.</p>
+        <p>&copy; Công ty TNHH FASTFOOD</p>
+    </footer>
+
+    <script src="js/main.js"></script>
